@@ -1,3 +1,5 @@
+'use client';
+
 import React, { EffectCallback, createContext, useContext, useEffect, useState, useMemo } from 'react';
 import {
   Client,
