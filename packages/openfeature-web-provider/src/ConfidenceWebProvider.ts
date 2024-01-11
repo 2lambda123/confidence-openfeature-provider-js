@@ -12,7 +12,7 @@ import {
 } from '@openfeature/web-sdk';
 import equal from 'fast-deep-equal';
 
-import { ApplyManager, ConfidenceClient, Configuration, ResolveContext } from '@spotify-confidence/client-http';
+import { ApplyManager, ConfidenceClient, Configuration, ResolveContext, ConfigurationFlag } from '@spotify-confidence/client-http';
 
 export interface ConfidenceWebProviderOptions {
   apply?: {
