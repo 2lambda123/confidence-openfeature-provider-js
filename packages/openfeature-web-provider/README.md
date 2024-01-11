@@ -7,7 +7,30 @@ This implements the static paradigm of OpenFeature.
 
 # Usage
 
-## Adding the dependencies
+## Installation
+
+To use the OpenFeature Web Provider, install the following packages:
+
+```ts
+import { createConfidenceWebProvider } from '@spotify-confidence/openfeature-web-provider';
+import { OpenFeature, OpenFeatureAPI } from '@openfeature/web-sdk';
+
+const provider = createConfidenceWebProvider({
+  // Configuration options
+});
+
+// Use the provider to access flags and evaluate them
+// ...
+import { OpenFeature, OpenFeatureAPI } from '@openfeature/web-sdk';
+
+const provider = createConfidenceWebProvider({
+  // Configuration options
+});
+
+// Use the provider to access flags and evaluate them
+// ...
+```
+```
 
 To add the packages to your dependencies run:
 
@@ -15,7 +38,9 @@ To add the packages to your dependencies run:
 yarn add @openfeature/web-sdk @spotify-confidence/openfeature-web-provider
 ```
 
-## Enabling the provider, setting the evaluation context and resolving flags
+## Usage
+
+To enable the provider, set the evaluation context, and resolve flags, use the following code:
 
 `setProvider` makes the Provider launch a network request to initialize the flags. In cases of success the
 `ProviderEvents.Ready` event will be emitted. In cases of failure of the network request, the `ProviderEvent.Error`
@@ -28,10 +53,17 @@ import { createConfidenceWebProvider } from '@spotify-confidence/openfeature-web
 import { OpenFeature, OpenFeatureAPI } from '@openfeature/web-sdk';
 
 const provider = createConfidenceWebProvider({
-  clientSecret: 'mysecret',
-  region: 'eu',
-  fetchImplementation: window.fetch.bind(window),
+import { createConfidenceWebProvider } from '@spotify-confidence/openfeature-web-provider';
+import { OpenFeature, OpenFeatureAPI } from '@openfeature/web-sdk';
+
+const provider = createConfidenceWebProvider({
+  // Configuration options
+
+
 });
+
+// Use the provider to access flags and evaluate them
+// ...
 
 await OpenFeature.setContext({
   targetingKey: 'myTargetingKey',
