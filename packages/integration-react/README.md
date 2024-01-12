@@ -15,7 +15,7 @@ To add the packages to your dependencies run:
 yarn add @openfeature/web-sdk @spotify-confidence/openfeature-web-provider @spotify-confidence/integration-react
 ```
 
-## Enabling the provider, setting the evaluation context and resolving flags in React
+## Enabling the provider, setting the evaluation context, and resolving flags in React
 
 `setProvider` makes the Provider launch a network request to initialize the flags. In cases of success the `ProviderEvents.Ready`
 event will be emitted. In cases of failure of the network request, the `ProviderEvent.Error` event will be emitted. The
