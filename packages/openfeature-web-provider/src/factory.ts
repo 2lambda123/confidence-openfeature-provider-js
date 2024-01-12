@@ -15,7 +15,7 @@ type ConfidenceWebProviderFactoryOptions = {
 export function createConfidenceWebProvider(options: ConfidenceWebProviderFactoryOptions): Provider {
   const confidenceClient = new ConfidenceClient({
     ...options,
-    apply: !options.apply,
+    apply: options.apply ? options.apply.timeout : undefined,
   });
 
   return new ConfidenceWebProvider(confidenceClient, {

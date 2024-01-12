@@ -30,9 +30,12 @@ You can run the tests with `yarn test`
 
 This project uses `prettier` and `eslint`.
 
-To check your code style you can run `yarn format:check` and `yarn lint`.
+To check your code style, run the following commands:
+- `yarn format:check` to check the code formatting.
+- `yarn format:check` to check the code formatting.
+- `yarn lint` to run the linter.
 
-To correct issues with `prettier` formatting you can run `yarn format`.
+To automatically fix code formatting issues, run `yarn format`.
 
 ## Issues
 
@@ -69,8 +72,8 @@ docs. Please file an [issue](https://$REPOURL/issues/New).
 # License
 
 By contributing your code, you agree to license your contribution under the
-terms of the [LICENSE](LICENSE)
+terms of the [LICENSE](CONTRIBUTING.md)
 
 # Code of Conduct
 
-Read our [Code of Conduct](CODE_OF_CONDUCT.md) for the project.
+Read our [Code of Conduct](CODE_OF_CONDUCT.md) for the project. for the project.

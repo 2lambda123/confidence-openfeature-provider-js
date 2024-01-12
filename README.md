@@ -40,6 +40,12 @@ yarn lint
 
 ## Testing
 
+To run the tests, use the following command:
+```sh
+yarn test
+```
+This will run the tests based on Jest and provide detailed test coverage.
+
 Tests are based on jest and can be run with
 
 ```sh
